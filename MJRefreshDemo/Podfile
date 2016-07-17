@@ -1,0 +1,4 @@
+target 'MJRefreshDemo' do
+
+pod 'MJRefresh', '~> 3.1.9'
+end

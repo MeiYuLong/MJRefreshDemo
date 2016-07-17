@@ -15,6 +15,7 @@
 		465845781D363C4700A392DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465845761D363C4700A392DF /* LaunchScreen.storyboard */; };
 		465845831D363C4700A392DF /* MJRefreshDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 465845821D363C4700A392DF /* MJRefreshDemoTests.m */; };
 		4658458E1D363C4700A392DF /* MJRefreshDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4658458D1D363C4700A392DF /* MJRefreshDemoUITests.m */; };
+		46D3ED6B1D3B2B00005A6958 /* YLCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D3ED6A1D3B2B00005A6958 /* YLCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		465845891D363C4700A392DF /* MJRefreshDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJRefreshDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4658458D1D363C4700A392DF /* MJRefreshDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshDemoUITests.m; sourceTree = "<group>"; };
 		4658458F1D363C4700A392DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D3ED691D3B2B00005A6958 /* YLCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCollectionViewController.h; sourceTree = "<group>"; };
+		46D3ED6A1D3B2B00005A6958 /* YLCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,10 @@
 		465845671D363C4700A392DF /* MJRefreshDemo */ = {
 			isa = PBXGroup;
 			children = (
+				465845A91D364F3100A392DF /* Controller */,
+				465845AA1D364F3100A392DF /* Model */,
+				465845AB1D364F3100A392DF /* Other */,
+				465845AC1D364F3100A392DF /* Views */,
 				4658456B1D363C4700A392DF /* AppDelegate.h */,
 				4658456C1D363C4700A392DF /* AppDelegate.m */,
 				4658456E1D363C4700A392DF /* ViewController.h */,
@@ -138,6 +145,36 @@
 				4658458F1D363C4700A392DF /* Info.plist */,
 			);
 			path = MJRefreshDemoUITests;
+			sourceTree = "<group>";
+		};
+		465845A91D364F3100A392DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46D3ED691D3B2B00005A6958 /* YLCollectionViewController.h */,
+				46D3ED6A1D3B2B00005A6958 /* YLCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		465845AA1D364F3100A392DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		465845AB1D364F3100A392DF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		465845AC1D364F3100A392DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +310,7 @@
 				465845701D363C4700A392DF /* ViewController.m in Sources */,
 				4658456D1D363C4700A392DF /* AppDelegate.m in Sources */,
 				4658456A1D363C4700A392DF /* main.m in Sources */,
+				46D3ED6B1D3B2B00005A6958 /* YLCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,8 +453,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MJRefreshDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ziyoufang.MJRefreshDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				VALID_ARCHS = "armv64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -428,6 +469,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ziyoufang.MJRefreshDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				VALID_ARCHS = "armv64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -496,6 +539,7 @@
 				465845941D363C4700A392DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		465845951D363C4700A392DF /* Build configuration list for PBXNativeTarget "MJRefreshDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +548,7 @@
 				465845971D363C4700A392DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		465845981D363C4700A392DF /* Build configuration list for PBXNativeTarget "MJRefreshDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +557,7 @@
 				4658459A1D363C4700A392DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
